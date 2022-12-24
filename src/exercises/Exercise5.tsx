@@ -4,7 +4,7 @@ import { ExerciseProps } from '../App';
 
 const Exercise5: React.FC<ExerciseProps> = ({ heading }) => {
     const [value, setValue] = React.useState("");
-    const handleInputChange = (e: any) => setValue(e.target.value);
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value);
     const handleSubmitButtonClick = () => alert(value);
 
     return (

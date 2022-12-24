@@ -10,36 +10,32 @@ import Exercise7 from './exercises/Exercise7';
 import Exercise8 from './exercises/Exercise8';
 import Exercise9 from './exercises/Exercise9';
 import Exercise10 from './exercises/Exercise10';
+import Exercise11 from './exercises/Exercise11';
+import Exercise12 from './exercises/Exercise12';
+import Exercise13 from './exercises/Exercise13';
+import Exercise14 from './exercises/Exercise14';
 
 export interface ExerciseProps {
     heading: string;
 }
 
 function App () {
-    const divider = <div>-----------------------------------------</div>;
-
     return (
         <div className="App">
-            <Exercise1 heading="1. Display simple text" />
-            {divider}
-            <Exercise2 heading="2. Display array of users" />
-            {divider}
-            <Exercise3 heading='3. Show/hide element on screen' />
-            {divider}
-            <Exercise4 heading="4. Two-way data binding" />
-            {divider}
-            <Exercise5 heading="5. Disable a button" />
-            {divider}
-            <Exercise6 heading="6. Update parent state" />
-            {divider}
-            <Exercise7 heading="7. Dynamically add child components" />
-            {divider}
-            <Exercise8 heading="8. Sum of two numbers" />
-            {divider}
-            <Exercise9 heading="9. Counter app" />
-            {divider}
+            <Exercise14 heading="14. Forms in react" />
+            <Exercise13 heading="13. Fetch user data" />
+            <Exercise12 heading="12. Codility" />
+            <Exercise11 heading="11. Day of the week" />
             <Exercise10 heading="10. Fetch data from an API" />
-            {divider}
+            <Exercise9 heading="9. Counter app" />
+            <Exercise8 heading="8. Sum of two numbers" />
+            <Exercise7 heading="7. Dynamically add child components" />
+            <Exercise6 heading="6. Update parent state" />
+            <Exercise5 heading="5. Disable a button" />
+            <Exercise4 heading="4. Two-way data binding" />
+            <Exercise3 heading='3. Show/hide element on screen' />
+            <Exercise2 heading="2. Display array of users" />
+            <Exercise1 heading="1. Display simple text" />
         </div>
     );
 }

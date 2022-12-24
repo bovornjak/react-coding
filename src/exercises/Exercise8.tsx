@@ -7,8 +7,8 @@ const Exercise8: React.FC<ExerciseProps> = ({ heading }) => {
     const [value2, setValue2] = React.useState(0);
     const [total, setTotal] = React.useState(0);
 
-    const handleChange1 = (e: any) => setValue1(+e.target.value);
-    const handleChange2 = (e: any) => setValue2(+e.target.value);
+    const handleChange1 = (e: React.ChangeEvent<HTMLInputElement>) => setValue1(+e.target.value);
+    const handleChange2 = (e: React.ChangeEvent<HTMLInputElement>) => setValue2(+e.target.value);
     const handleButtonClick = () => setTotal(value1 + value2);
 
     return (

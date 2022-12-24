@@ -1,25 +1,15 @@
 import * as React from "react";
 import { ExerciseProps } from "../App";
 import ExerciseLayout from "./ExerciseLayout";
-
-interface UserData {
-    name: string;
-    website: string;
-    email: string;
-    phone: string;
-}
+import { UserData } from "./types";
 
 const Exercise10: React.FC<ExerciseProps> = ({ heading }) => {
     const [userData, setUserData] = React.useState<UserData | null>(null);
 
-    const fetchUserData = async () => {
-        const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
-        const json = await response.json();
-        setUserData(json);
-    };
-
     React.useEffect(() => {
-        fetchUserData();
+        fetch("https://jsonplaceholder.typicode.com/users/1")
+            .then(res => res.json())
+            .then(json => setUserData(json));
     }, []);
 
     return (

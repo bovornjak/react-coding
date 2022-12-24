@@ -8,6 +8,7 @@ const ExerciseLayout: React.FC<React.PropsWithChildren<ExerciseProps>> = ({ head
             <div>
                 {children}
             </div>
+            <div>-----------------------------------------</div>
         </>
     );
 };

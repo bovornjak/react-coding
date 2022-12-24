@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { ExerciseProps } from "../App";
 import ExerciseLayout from "./ExerciseLayout";
 
