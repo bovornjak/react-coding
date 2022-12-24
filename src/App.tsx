@@ -14,6 +14,7 @@ import Exercise11 from './exercises/Exercise11';
 import Exercise12 from './exercises/Exercise12';
 import Exercise13 from './exercises/Exercise13';
 import Exercise14 from './exercises/Exercise14';
+import Exercise15 from './exercises/Exercise15';
 
 export interface ExerciseProps {
     heading: string;
@@ -22,6 +23,7 @@ export interface ExerciseProps {
 function App () {
     return (
         <div className="App">
+            <Exercise15 heading="15. Controlled/Uncontrolled component" />
             <Exercise14 heading="14. Forms in react" />
             <Exercise13 heading="13. Fetch user data" />
             <Exercise12 heading="12. Codility" />
